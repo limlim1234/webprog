@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        input {
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text"> ~
+    <input type="text"> =
+    <!--input type="text"> -->
+    <div />
+    <p />
+    <input type="button" id="btn" value="OK">
+    
+    <script>
+        var btn = document.getElementById("btn");
+        var inputs = document.querySelectorAll("[type='text']");
+        console.log(inputs);
+
+        /* var btn = document.getElementById("btn");*/
+        btn.onclick = function () {
+            var fv = inputs[0].value;
+            var tv = inputs[1].value;
+            var rlt =  /*inputs[2];*/document.querySelectorAll("div")[0]; //querySelectorAll 배열을 뜻함
+            /*    var fv =document.getElementById("fromValue").value;
+                var tv=document.getElementById("toValue").value;*/
+            /* var rlt= document.getElementById("result");*/
+            fv = parseInt(fv);
+            tv = parseInt(tv);
+          //  var result = "hello"
+            /*result = 0;*/
+            /*   var sum=0;*/
+            /*//1~10까지의 합
+            for(var i=0; i<=10; i++) {
+                sum += i;
+            }*/
+               var result=0;                      //result를 for문 밖에서도 쓰기 위해서 먼저 선언을 한다 
+               for( var i = fv; i <=tv; i++) {
+                      result +=i;
+               }
+
+            /*    for(fv; fv<=tv; fv++) {
+                    sum +=fv;
+                }
+                document.getElementById("result").value = sum;
+                console.log(sum); */
+            rlt.innerHTML = result;
+        }
+    </script>
+
+</body>
+
+</html>

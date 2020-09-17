@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>layout.html</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="layout.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
 
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
 
 <header>
   <h2>Cities</h2>
@@ -23,38 +36,42 @@
   </nav>
   
   <article>
-   
-    <form>
+    <form action="tokyo.jsp" method="POST">
       <fieldset>
-          <legend>
-              개인 정보 입력</legend>
-             <p>아이디 : <input type="text" name="id"> <input type="submit" value="ID 중복검사"></p>
-              <p>생년월일 : <input type="date" name="Date"></p>
-              <p>성별 : 
-              <input type="radio" name="sex" value="male">남자
-              <input type="radio" name="sex" value="female">여자</p>
-              <p>이메일 : <input type="email" name="myemail"></p>
-              <p>메일수신 : <input type="radio" name="sex" value="agree">수신동의
-              <input type="radio" name="sex" value="disagree">수신거부</p>
-              <p>핸드폰 : <select phonea="">
-                  <option value="phonea">010</option>
-                   <option value="phoneb">011</option>  
-               </select>-<input type="text" name="phone">-<input type="text" name="phone"></p>
-              <p>직업 : <select job="">
-                  <option value="">학생</option>
-                   <option value="직장인">직장인</option>  
-               </select></p> 
-               <p>취미 : <input type="checkbox" name="hobby" value="shopping">쇼핑
-                  <input type="checkbox" name="hobby" value="internet">인터넷
-                  <input type="checkbox" name="hobby" value="music">음악감상
-                  <input type="checkbox" name="hobby" value="book">독서
-                  <input type="checkbox" name="hobby" value="sprots">스포츠</p>
-             <p>자기소개 : 
-                  <textarea rows="5" cols="50"></textarea></p>
-                  
-      </fieldset>
-      <input type="submit" value="등록">
-                    <input type="reset" value="초기화">
+      <legend>개인 정보 입력</legend>
+    <p>아이디: <input type="text" name="id"> <input type="button" name="wndqhr" value="ID중복검사"> <p/>
+     <p>생년월일: <input type="text" name="birth" value="연도 -월 -일"> <p/>
+     <p>성별: 
+      <input type="radio" name="sex" value="남성" checked>남성
+      <input type="radio" name="sex" value="여성">여성 <p/>
+      <p>이메일: <input type="email" name="email" > <p/>
+      메일수신: 
+      <input type="radio" name="agree" value="수신동의">수신동의
+      <input type="radio" name="agree" value="수신거부">수신거부 <p/>
+     <p>핸드폰:
+      <select name="phone1">
+          <option value="010" selected>010</option>
+          <option value="011" >011</option>
+      </select>
+      -<input type="text" name="phone2">-<input type="text" name="phone3"> <p/>
+      <p>직업: <select name="job">
+          <option value="학생" selected>학생</option>
+          <option value="직장인" >직장인</option>
+<option value="군인" >군인</option>
+         
+      </select> <p/>
+      <p>취미: 
+      <input type="checkbox" name="hobby" value="쇼핑" checked>쇼핑
+      <input type="checkbox" name="hobby" value="인터넷">인터넷
+      <input type="checkbox" name="hobby" value="음악감상">음악감상
+      <input type="checkbox" name="hobby" value="독서">독서
+      <input type="checkbox" name="hobby" value="스포츠">스포츠
+      <p/>
+     <p>자기 소개: <textarea name="textarea" cols="50" rows="3"></textarea><p/>
+
+      </fieldset> 
+<input type="submit" value="등록">
+      <input type="reset" value="초기화">
   </form>
   </article>
 </section>
@@ -65,15 +82,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
